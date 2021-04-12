@@ -1,4 +1,4 @@
-import socket, threading, os, sys, importlib
+import socket, threading, os, sys
 import mycolors
 
 nickname = input(mycolors.mycolors.Magenta + "Choose your nickname: " + mycolors.mycolors.Default)
@@ -26,7 +26,7 @@ def receive():
 
 def write():
     while True:
-        message = f'{mycolors.mycolors.Green}{nickname}{mycolors.mycolors.Default}: {mycolors.mycolors.LightRed}{input("")}{mycolors.mycolors.Default}'
+        message = f'{mycolors.mycolors.Green}{nickname}{mycolors.mycolors.Default}: {input("")}'
         client.send(message.encode('ascii'))
 
 receive_thread = threading.Thread(target=receive)
