@@ -1,3 +1,5 @@
+# Colors used to style the terminal code.
+# If you can't see the colors on your Windows mechine you have to enable  VT100 emulation.
 class mycolors:
 	Default      = "\033[39m"
 	Black        = "\033[30m"
